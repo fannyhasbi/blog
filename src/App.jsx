@@ -1,8 +1,20 @@
 import React from 'react';
 
+import Nav from './components/Nav';
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
+
 class App extends React.Component {
   render(){
-    return <h1 className="jumbotron text-center">Hello guys</h1>;
+    return (
+      <div>
+        <Nav />
+        <Header title="Fanny Hasbi" subTitle="Simple person who love coding :)" />
+        <Content />
+        <Footer />
+      </div>
+    );
   }
 }
 
